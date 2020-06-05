@@ -1,0 +1,16 @@
+Iterator (based on Java Iterator)
+
+Intent:
+  - sequentially access the elements of a collection without revealing or
+    exposing the collection interface and/or representation
+
+Structure:
+  - define/use Iterable<T> interface with two methods:
+     - hasNext    there are not-yet-iterated elements
+     - next       returns a not-yet-iterated element
+  - the iterator class is preferably encapsulated
+  - iterator object is produced by method "iterator()"
+
+Notes:
+  - Beware of changing the collection during an iteration
+  
