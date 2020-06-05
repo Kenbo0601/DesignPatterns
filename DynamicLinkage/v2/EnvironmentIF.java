@@ -1,0 +1,3 @@
+interface EnvironmentIF {
+    void pay();
+}

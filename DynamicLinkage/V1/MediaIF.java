@@ -1,0 +1,4 @@
+
+interface MediaIF {
+    void render();
+}

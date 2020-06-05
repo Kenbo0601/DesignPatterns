@@ -1,0 +1,3 @@
+interface AbstractCrust {
+    int calories();
+}

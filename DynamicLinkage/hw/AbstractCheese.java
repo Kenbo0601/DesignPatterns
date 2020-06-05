@@ -1,0 +1,3 @@
+interface AbstractCheese {
+    int calories();
+}
