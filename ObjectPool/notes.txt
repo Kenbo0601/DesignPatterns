@@ -1,0 +1,25 @@
+***** Object Pool *****
+
+-   Object pool is a Singleton
+(this forces other classes to call its getInstance method to get the one instance of the ObjectPool class)
+    -   Private constructor
+    -   static getInstance method
+    *but we do not need a private static variable
+
+using a simple array is usually the best way to implement the object pool
+
+class Pool {
+     //private constructor
+     private Pool() { /*singleton*/}
+
+     private static Stack<MyObject> store = new Stack<>();
+
+     static MyObject getObject() {
+         if(store.empty())
+             return new MyObject();
+         else
+             return store.pop();
+     }
+
+    static void returnObject(MyObject obj) { store.push(obj); }
+}

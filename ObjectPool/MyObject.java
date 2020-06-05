@@ -1,0 +1,3 @@
+class MyObject {
+    //nothing specific, but more later ...
+}
