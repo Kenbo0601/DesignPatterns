@@ -1,0 +1,4 @@
+
+interface CarImplIF {
+    void refuel();
+}
