@@ -1,0 +1,3 @@
+interface ServiceIF {
+    void execute();
+}
