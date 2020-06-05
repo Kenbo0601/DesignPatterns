@@ -1,0 +1,3 @@
+interface MarkerIF {
+    //Nothing here
+}
