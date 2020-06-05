@@ -1,0 +1,39 @@
+
+fundamental Design Pattern
+    -   Immutable
+    -   Marker Interface
+    -   Proxy
+
+
+Creational Patterns
+    -   Factory Method
+    -   Abstract Factory
+    -   Prototype
+    -   Singleton
+    -   Object Pool
+
+
+Partitioning Patterns
+    -   Composite
+    -   Filter
+
+
+Structural Patterns
+    -   Adapter
+    -   Iterator
+    -   Facade
+    -   Bridge
+    -   Flyweight
+    -   Dynamic Linkage
+    -   Virtual Proxy
+    -   Decorator
+    -   Cache Management
+
+
+Behavioral Patterns
+    -   Command
+    -   Null Object
+    -   Mediator
+    -   Little Language
+    -   Snapshot
+    -   Visitor
