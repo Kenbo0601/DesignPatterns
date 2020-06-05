@@ -1,0 +1,4 @@
+
+interface GlyphIF {
+    void render();
+}
