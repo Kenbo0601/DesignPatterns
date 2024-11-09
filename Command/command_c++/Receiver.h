@@ -29,3 +29,4 @@ class Stereo : public Device {
 };
 
 #endif // RECIEVER_H
+

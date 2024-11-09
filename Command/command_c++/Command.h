@@ -11,7 +11,7 @@ class Command {
         virtual ~Command() = default;
 };
 
-// Concrete Command classes
+// Concrete Command class: TurnOnCommand
 class TurnOnCommand : public Command {
     private:
         Device *device;
@@ -20,6 +20,7 @@ class TurnOnCommand : public Command {
         void execute() override;
 };
 
+// Concrete Command class: TurnOffCommand
 class TurnOffCommand : public Command {
     private:
         Device *device;
@@ -28,6 +29,7 @@ class TurnOffCommand : public Command {
         void execute() override;
 };
 
+// Concrete Command class: ChangeChannelCommand
 class ChangeChannelCommand : public Command {
     private:
         TV *tv;
@@ -36,6 +38,7 @@ class ChangeChannelCommand : public Command {
         void execute() override;
 };
 
+// Concrete Command class: AdjustVolumeCommand
 class AdjustVolumeCommand : public Command {
     private:
         Stereo *stereo;

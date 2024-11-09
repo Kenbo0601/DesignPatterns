@@ -1,37 +1,42 @@
 #include "Command.h"
 
 // TurnOnCommand class implementation 
+// Constructor 
 TurnOnCommand::TurnOnCommand(Device *device) {
     this->device = device;
 }
 
 void TurnOnCommand::execute() {
-    device->turnOn();
+    device->turnOn(); // invoke receiver child classes: divice is either TV or Stereo 
 }
 
 // TurnOffCommand class implementation 
+// Constructor 
 TurnOffCommand::TurnOffCommand(Device *device) {
     this->device = device;
 }
 
 void TurnOffCommand::execute() {
-    device->turnOff();
+    device->turnOff(); // invoke receiver child classes: divice is either TV or Stereo 
 }
 
 // ChangeChannelCommand class implementation 
+// Constructor 
 ChangeChannelCommand::ChangeChannelCommand(TV *tv) {
     this->tv = tv;
 }
 
 void ChangeChannelCommand::execute() {
-    tv->changeChannel();
+    tv->changeChannel(); // invoke receiver child class TV 
 }
 
-// AdjustVolumeChannel class implementation 
+// AdjustVolumeCommand class implementation 
+// Constructor 
 AdjustVolumeCommand::AdjustVolumeCommand(Stereo *stereo) {
     this->stereo = stereo;
 }
 
 void AdjustVolumeCommand::execute() {
-    stereo->adjustVolume();
+    stereo->adjustVolume(); // invoke receiver child class Stereo
 }
+

@@ -2,8 +2,8 @@
 #include "Invoker.h"
 #include "Command.h"
 
+/* Implementation of Command Design Pattern */
 int main() {
-
     // Create Receiver objects 
     TV tv;
     Stereo stereo;
@@ -30,8 +30,9 @@ int main() {
     remote.setCommand(&changeChannnel);
     remote.pressButton(); // Output: Channel Changed
 
-    remote.setCommand(&turnOffStereoCommand);
+    remote.setCommand(&turnOffTVCommand);
     remote.pressButton(); // Output: TV is now OFF
 
     return 0;
 }
+
