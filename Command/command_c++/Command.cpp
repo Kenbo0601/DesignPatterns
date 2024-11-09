@@ -1,13 +1,33 @@
-// Command.h
-#ifndef COMMAND_H
-#define COMMAND_H
+#include "Command.h"
 
-// Command Interface 
-class Command {
-    public:
-        virtual void execute() = 0;
-        virtual ~Command() = default;
-};
+// TurnOnCommand class implementation 
+TurnOnCommand::TurnOnCommand(Device *device) {
+    this->device = device;
+}
 
-#endif // COMMAND_H
+void TurnOnCommand::execute() {
+    device->turnOn();
+}
 
+// TurnOffCommand class implementation 
+TurnOffCommand::TurnOffCommand(Device *device) {
+    this->device = device;
+}
+
+void TurnOffCommand::execute() {
+    device->turnOff();
+}
+
+// ChangeChannelCommand class implementation 
+ChangeChannelCommand::ChangeChannelCommand(TV *tv) {
+    this->tv = tv;
+}
+
+void ChangeChannelCommand::execute() {
+    tv->changeChannel();
+}
+
+// AdjustVolumeChannel class implementation 
+AdjustVolumeCommand::AdjustVolumeCommand(Stereo *stereo) {
+    this->stereo = stereo;
+}
