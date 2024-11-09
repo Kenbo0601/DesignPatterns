@@ -24,5 +24,14 @@ int main() {
     remote.setCommand(&turnOnTVCommand);
     remote.pressButton(); // Output: TV is now ON
 
+    remote.setCommand(&adjustVolume);
+    remote.pressButton(); // Output: Volume Adjusted 
+
+    remote.setCommand(&changeChannnel);
+    remote.pressButton(); // Output: Channel Changed
+
+    remote.setCommand(&turnOffStereoCommand);
+    remote.pressButton(); // Output: TV is now OFF
+
     return 0;
 }

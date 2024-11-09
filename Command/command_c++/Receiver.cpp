@@ -12,7 +12,7 @@ void TV::turnOff() {
 }
 
 void TV::changeChannel() {
-    std::cout << "Channel changed on TV" << std::endl;
+    std::cout << "Channel changed" << std::endl;
 }
 
 // Stereo class implementation 
@@ -25,5 +25,5 @@ void Stereo::turnOff() {
 }
 
 void Stereo::adjustVolume() {
-    std::cout << "Channel changed on Stereo" << std::endl;
+    std::cout << "Volume Adjusted" << std::endl;
 }

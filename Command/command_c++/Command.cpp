@@ -31,3 +31,7 @@ void ChangeChannelCommand::execute() {
 AdjustVolumeCommand::AdjustVolumeCommand(Stereo *stereo) {
     this->stereo = stereo;
 }
+
+void AdjustVolumeCommand::execute() {
+    stereo->adjustVolume();
+}
